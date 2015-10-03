@@ -1,0 +1,11 @@
+class CirclePerimeterArea
+    {
+        static void Main()
+        {
+            Console.WriteLine("Please, eneter a radius:");
+            double r = double.Parse(Console.ReadLine());
+            Console.WriteLine("Perimeter of circle is: {0:F2}", 2 * Math.PI * r);
+            Console.WriteLine("Area of circle is: {0:F2}", Math.PI*r*r);
+
+        }
+    }
