@@ -1,0 +1,28 @@
+class QuadricEquation
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a, b and c: ");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+
+            double D = Math.Sqrt(b * b - 4 * a * c);
+
+            if (D > 0 && a != 0)
+            {
+                Console.WriteLine("x1 = {0}, x2 = {1}", (-b + D) / (2 * a), (-b - D) / (2 * a));
+            }
+
+            else if (D == 0 && a != 0)
+            {
+                Console.WriteLine("x1 = x2 = {0}", -b / (2 * a));
+            }
+
+            else
+            {
+                Console.WriteLine("There are no real roots!");
+            }
+        }
+
+    }
